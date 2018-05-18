@@ -1,0 +1,65 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* color pallete */
+/* RICH BLACK #010607 */
+/* ROYAL BLUE #0A2463 */
+/* WHITE SMOKE #F7F7F2 */
+/* CYAN #01BAEF */
+/* BLUEBERRY #4392F1 */
+
+body{
+  background:#111;
+  color:#eee;
+}
+
+.name{
+  border-bottom: 3px solid #ddd;
+  width:60%;
+  margin: 0 auto;
+  font-size:60px;
+  text-align: center;
+  padding:10px 0;
+}
+
+.tech, .projects{
+  /* height:20vh; */
+  border:2px solid white;
+}
+
+.tech_item{
+  /* border:1px solid green; */
+  width:20%;
+  /* height:20vh; */
+  background:#4392F1;
+  transform:skew(-200deg);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:5px 0;
+}
+
+.tech_img{
+  /* border:1px solid red; */
+  transform:skew(200deg);
+  width:100%;
+  height:100%;
+  /* height:10vh; */
+  /* margin: 0 auto; */
+  text-align:center;
+}
+
+.project_list{
+  display: flex;
+  justify-content: space-around;
+  align-content:center;
+  flex-wrap:wrap;
+}
+
+.project_item{
+  border: 6px solid #01BAEF;
+  width:45%;
+}
