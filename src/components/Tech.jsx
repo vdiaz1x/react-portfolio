@@ -16,6 +16,7 @@ function Tech(props) {
   const info_box = (
     <section className="tech_dossier">
       <h1>{props.dossier.name}</h1>
+      <p>{props.dossier.description}</p>
     </section>
   )
 
@@ -23,7 +24,7 @@ function Tech(props) {
 
   return (
     <div className="tech">
-      <h1 className="name">Tech</h1>
+      <h1 className="name">&lt; Tech /&gt;</h1>
       <section className="tech_nav">{icon_list}</section>
       {dossier}
     </div>
