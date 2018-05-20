@@ -1,14 +1,17 @@
 import React from 'react';
 
 function TechItem(props) {
-  console.log("THIS IS THE ICON", props.toggle)
-
+  // showing tech square with props
   return (
     <div className="tech_item tooltip" onClick={e => props.info(props.name, props.description)}>
       <div className="tech_img">
       {props.svg}
       </div>
-      <span className="tooltiptext">{props.name}</span>
+      {/*showing tooltip with tech name*/}
+      <span className="tooltiptext">
+        <span className="tag"># </span>
+        {props.name}
+      </span>
     </div>
   )
 }
