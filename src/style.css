@@ -1,3 +1,4 @@
+/* normalizing all elements */
 *{
   margin:0;
   padding:0;
@@ -11,11 +12,17 @@
 /* CYAN #01BAEF */
 /* BLUEBERRY #4392F1 */
 
+/* main tags */
 body{
   background:#111;
   color:#eee;
 }
 
+svg{
+  vertical-align:top;
+}
+
+/* main components */
 .name{
   border-bottom: 3px solid #ddd;
   width:60%;
@@ -30,28 +37,44 @@ body{
   border:2px solid white;
 }
 
+/* tech components */
+.tech_nav{
+  display:flex;
+  justify-content: center;
+  padding:20px 40px;
+}
+
 .tech_item{
   /* border:1px solid green; */
-  width:20%;
+  width:15%;
   /* height:20vh; */
-  background:#4392F1;
+  /* background:#4392F1; */
+  background:#444;
   transform:skew(-200deg);
   display:flex;
   justify-content:center;
-  align-items:center;
-  padding:5px 0;
+  /* align-items:center; */
+  padding:10px 0;
+  cursor:pointer;
+}
+
+.tech_dossier{
+  text-align: center;
+  padding:10px;
+  /* border:2px solid purple; */
 }
 
 .tech_img{
   /* border:1px solid red; */
   transform:skew(200deg);
-  width:100%;
+  width:60%;
   height:100%;
   /* height:10vh; */
   /* margin: 0 auto; */
   text-align:center;
 }
 
+/* project components */
 .project_list{
   display: flex;
   justify-content: space-around;

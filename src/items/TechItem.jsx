@@ -1,13 +1,15 @@
 import React from 'react';
 
-function ProjectItem(props) {
+function TechItem(props) {
+  console.log("THIS IS THE ICON", props.toggle)
+
   return (
-    <div className="tech_item">
-
-        <img className="tech_img"src="https://cdn.wikitude.com/static-website/2017/09/26171742/javascript-logo.png" alt=""/>
-
+    <div className="tech_item" onClick={e => props.info(props.name)}>
+      <div className="tech_img">
+      {props.svg}
+      </div>
     </div>
   )
 }
 
-export default ProjectItem;
+export default TechItem;
