@@ -13,10 +13,10 @@ function Tech(props) {
   // info box for the tech that is clicked on
   const info_box = (
     <section className="tech_dossier">
-      <h1>
+      <h1 className="tech_header">
         <span className="tag"># </span> {props.dossier.name}
       </h1>
-      <p className="quotes">
+      <p className="quotes tech_p">
         {props.dossier.description}
       </p>
     </section>

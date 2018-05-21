@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6, .quotes::before, .quotes::after{
 
 p{
 font-family: 'Eczar', serif;
+font-size:20px;
 }
 
 svg{
@@ -33,7 +34,7 @@ svg{
 /* main components */
 .name{
   border-bottom: 4px solid #04a8e6;
-  width:60%;
+  width:40%;
   margin: 0 auto;
   font-size:60px;
   text-align: center;
@@ -43,6 +44,14 @@ svg{
 
 .tag{
   color:#ff3c11;
+}
+
+.red{
+  color:#ff3c11;
+}
+
+.blue{
+  color:#04a8e6;
 }
 
 .quotes::before{
@@ -66,6 +75,20 @@ svg{
   text-align:center;
 }
 
+/* about me components */
+.about_me_info{
+  margin:0 auto;
+  width:80%;
+  padding:40px 0;
+}
+
+.about_me_p{
+  margin:20px 0;
+  padding: 0 20px 20px;
+  border-bottom: 3px solid #04a8e6;
+  border-left:3px solid #04a8e6;
+}
+
 /* tooltips */
 .tooltip {
     position: relative;
@@ -75,7 +98,7 @@ svg{
 
 .tooltip .tooltiptext {
     /* visibility: hidden; */
-    width: 120px;
+    width: 100%;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -83,8 +106,8 @@ svg{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 150%;
-    left: 50%;
+    top: 100%;
+    left: 43%;
     margin-left: -60px;
     opacity: 0;
     transition: opacity .5s;
@@ -93,12 +116,12 @@ svg{
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 50%;
     margin-left: -5px;
-    border-width: 5px;
+    border-width: 7px;
     border-style: solid;
-    border-color: black transparent transparent transparent;
+    border-color: transparent transparent black transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -110,7 +133,9 @@ svg{
 .tech_nav{
   display:flex;
   justify-content: center;
-  padding:20px 60px;
+  margin:20px 0;
+  /* border:2px solid white; */
+  padding:20px 80px;
 }
 
 .tech_item{
@@ -123,7 +148,7 @@ svg{
   display:flex;
   justify-content:center;
   /* align-items:center; */
-  padding:10px 0;
+  padding:20px 0;
   cursor:pointer;
 }
 
@@ -135,6 +160,18 @@ svg{
   margin:0 auto;
   border-radius:5px;
   /* border:2px solid purple; */
+}
+
+.tech_header{
+  border-bottom:2px solid #04a8e6;
+  padding-bottom:10px;
+  width:70%;
+  margin:0 auto;
+}
+
+.tech_p{
+  padding:10px 0;
+  /* border-left:1px solid white; */
 }
 
 .tech_img{
@@ -153,23 +190,36 @@ svg{
   justify-content: space-around;
   align-content:space-around;
   flex-wrap:wrap;
+  padding:20px;
+  margin-top:40px;
 }
 
 .project_item{
-  border: 6px solid #04a8e6;
+  /* border: 6px solid #04a8e6; */
+  border-bottom: 6px solid #04a8e6;
+  border-left: 6px solid #04a8e6;
   padding:10px 20px;
   width:45%;
-  margin: 10px 0;
+  margin: 10px 0 30px;
   /* background:#212121; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project_text{
+
 }
 
 .project_data{
   padding:10px 0;
+  margin-top:20px;
+  border-top:3px solid #ff3c11;
 }
 
 .project_icon{
   width:10%;
-  text-align: center
+  text-align: center;
   /* padding:0 20px; */
 }
 
@@ -179,4 +229,10 @@ svg{
 
 .project_link:hover{
   background:purple;
+}
+
+/* contact components */
+.contact_list{
+  /* border:3px solid red; */
+  padding:20px;
 }
