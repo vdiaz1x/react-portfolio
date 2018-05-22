@@ -10,13 +10,15 @@ function Contact(props) {
         <span className="tag"> /&gt;</span>
       </h1>
       <section className="contact_list">
-        <p className="contact_item">
-          <span className="red">Email: </span>
-          <a className="blue" href="mailto:vdiaz@gmail.com">
-            vdiaz@gmail.com
-          </a>
-          <FontAwesomeIcon icon={"fas","times"}/>
-        </p>
+        <a className="contact_item" href="mailto:vdiaz1x@gmail.com">
+          <FontAwesomeIcon icon={['far', 'envelope']} size="4x" />
+        </a>
+        <a className="contact_item" href="https://www.linkedin.com/in/vinicio-diaz/">
+          <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="4x" />
+        </a>
+        <a className="contact_item" href="https://github.com/vdiaz1x">
+          <FontAwesomeIcon icon={['fab', 'github']} size="4x" />
+        </a>
       </section>
     </div>
   );

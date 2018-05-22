@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, .quotes::before, .quotes::after{
   font-family: 'Oswald', sans-serif;
 }
 
-p{
+p, .project_author{
 font-family: 'Eczar', serif;
 font-size:20px;
 }
@@ -98,19 +98,19 @@ svg{
 
 .tooltip .tooltiptext {
     /* visibility: hidden; */
-    width: 100%;
+    width: 150%;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 10px 20px;
     position: absolute;
     z-index: 1;
     top: 100%;
-    left: 43%;
-    margin-left: -60px;
+    /* left: 43%; */
+    /* margin-left: -60px; */
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity .2s;
 }
 
 .tooltip .tooltiptext::after {
@@ -118,8 +118,8 @@ svg{
     position: absolute;
     bottom: 100%;
     left: 50%;
-    margin-left: -5px;
-    border-width: 7px;
+    /* margin-left: -5px; */
+    border-width: 10px;
     border-style: solid;
     border-color: transparent transparent black transparent;
 }
@@ -133,9 +133,9 @@ svg{
 .tech_nav{
   display:flex;
   justify-content: center;
-  margin:20px 0;
+  margin:20px 55px;
   /* border:2px solid white; */
-  padding:20px 80px;
+  padding:20px 0;
 }
 
 .tech_item{
@@ -143,12 +143,12 @@ svg{
   width:15%;
   /* height:20vh; */
   /* background:#4392F1; */
-  background:#444;
+  /* background:#444; */
   transform:skew(-200deg);
   display:flex;
   justify-content:center;
   /* align-items:center; */
-  padding:20px 0;
+  padding:30px 0;
   cursor:pointer;
 }
 
@@ -157,7 +157,7 @@ svg{
   padding:20px;
   background:#222;
   width:80%;
-  margin:0 auto;
+  margin:70px auto;
   border-radius:5px;
   /* border:2px solid purple; */
 }
@@ -184,6 +184,35 @@ svg{
   text-align:center;
 }
 
+.angle_bracket{
+  position:relative;
+}
+
+.angle_bracket:hover{
+  background:black;
+}
+
+.angle_bracket::before, .angle_bracket::after{
+  content:'';
+  height:40%;
+  width:40%;
+  position:absolute;
+  /* left:0; */
+}
+
+.angle_bracket:hover::before{
+  border-left:3px solid #04a8e6;
+  border-bottom:3px solid #04a8e6;
+  bottom:0;
+  left:0;
+}
+.angle_bracket:hover::after{
+  border-right:3px solid #ff3c11;
+  border-top:3px solid #ff3c11;
+  top:0;
+  right:0;
+}
+
 /* project components */
 .project_list{
   display: flex;
@@ -200,39 +229,89 @@ svg{
   border-left: 6px solid #04a8e6;
   padding:10px 20px;
   width:45%;
-  margin: 10px 0 30px;
+  margin: 10px 0 60px;
   /* background:#212121; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .project_text{
 
 }
 
+.project_author{
+  font-weight:normal;
+}
+
 .project_data{
-  padding:10px 0;
+  padding:10px 20px 0;
   margin-top:20px;
   border-top:3px solid #ff3c11;
+  display:flex;
+  justify-content:space-evenly;
+  align-content:center;
 }
 
 .project_icon{
-  width:10%;
+  /* width:100%; */
   text-align: center;
+  padding:0 20px 10px;
+  margin: 10px 0;
+  border-bottom:2px solid transparent
+  /* margin:0 5px; */
   /* padding:0 20px; */
 }
 
 .project_link{
-  padding:0 10px;
+  width:15%;  /* text-align:center; */
+  /* /* padding:0 20px; */ */
+  /* height:100px; */
+  border-bottom: 2px solid transparent;
+  /* border-right: 2px solid transparent; */
 }
 
-.project_link:hover{
-  background:purple;
+.project_icon:hover{
+  /* background:white; */
+  border-bottom: 2px solid #ff3c11;
+  /* border-right: 2px solid #ff3c11; */
+}
+/* .project_link:hover .project_icon:hover{fill:black;} */
+
+.corner{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 0 30px;
+  border-color: transparent transparent transparent #04a8e6
+  ;
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 
 /* contact components */
 .contact_list{
   /* border:3px solid red; */
   padding:20px;
+  display:flex;
+  justify-content:space-evenly;
+  align-content:center;
+}
+
+.contact_item{
+  /* padding:10px 20px; */
+  /* color:white; */
+}
+
+.contact_item{
+  color:white;
+  padding:10px 20px;
+  border-bottom: 3px solid transparent;
+}
+
+.contact_item:hover{
+  color:#ff3c11;
+  border-bottom: 3px solid #04a8e6;
 }
