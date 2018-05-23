@@ -214,13 +214,39 @@ svg{
 .project_item{
   border-bottom: 6px solid #04a8e6;
   border-left: 6px solid #04a8e6;
-  padding:10px 20px;
+  padding:10px 20px 0;
   width:45%;
   margin: 10px 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+}
+
+.project_item::before{
+  content:"";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 0 50px;
+  border-color: transparent transparent transparent #04a8e6;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.project_item::after{
+  content:"";
+  width: 15%;
+  height: 20%;
+  /* border-style: solid; */
+  border-top:6px solid red;
+  border-right:6px solid red;
+  /* border-width: 0 50px 50px 0; */
+  /* border-color: red red transparent transparent; */
+  position:absolute;
+  top:0;
+  right:0;
 }
 
 .project_text p{
@@ -245,40 +271,53 @@ svg{
 }
 
 .project_data{
-  padding:10px 20px 0;
   margin-top:20px;
-  border-top:3px solid #ff3c11;
+  padding:10px 20px 0;
   display:flex;
   justify-content:space-evenly;
-  align-content:center;
+  /* align-content:center; */
+  position: relative;
+}
+
+.project_data::before{
+  content:"";
+  border-top:3px solid #ff3c11;
+  width:70%;
+  top:0;
+  position: absolute;
 }
 
 .project_icon{
   text-align: center;
-  padding:0 20px 10px;
-  margin: 10px 0;
+  padding:0 0 10px;
+  margin-top: 5px;
   border-bottom:2px solid transparent
 }
 
 .project_link{
   width:10%;
-  border-bottom: 2px solid transparent;
+  position: relative;
 }
 
-.project_icon:hover{
-  border-bottom: 2px solid #ff3c11;
-}
-
-.corner{
-  width: 0;
-  height: 0;
+.project_link:hover::before, .project_link:hover::after{
+  content:"";
   border-style: solid;
-  border-width: 30px 0 0 30px;
-  border-color: transparent transparent transparent #04a8e6
-  ;
-  position:absolute;
-  bottom:0;
+  position: absolute;
+  top:30%;
+}
+
+.project_link:hover::before{
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #04a8e6;
   left:0;
+  margin-left:-15px;
+}
+
+.project_link:hover::after{
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ff3c11 transparent transparent;
+  right:0;
+  margin-right:-15px;
 }
 
 /* contact components */

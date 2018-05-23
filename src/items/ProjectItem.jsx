@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ProjectItem(props) {
-  const stack = props.tech.map(tech => <span className="project_tech_stack">{tech}</span>);
+  const stack = props.tech.map(tech => <span className="project_tech_stack" key={`${tech}_stack`} >{tech}</span>);
 
   return (
     <div className="project_item">
@@ -9,9 +9,9 @@ function ProjectItem(props) {
         <h3>ID No. <span className="tag">{props.id}</span></h3>
         <h2>{props.name}</h2>
         <p>{props.description}</p>
-        <h3>Code Name: <span className="project_author red">{props.code}</span> </h3>
-        <h3>Author: <span className="project_author blue">{props.author}</span> </h3>
-        <h3>Tech Stack: <span className="project_author blue">{stack}</span> </h3>
+        <h3>Code Name : <span className="project_author red">{props.code}</span> </h3>
+        <h3>Author : <span className="project_author blue">{props.author}</span> </h3>
+        <h3>Tech Stack : <span className="project_author blue">{stack}</span> </h3>
       </section>
       <section className="project_data">
         <a className="project_link" href={props.git}>
@@ -25,7 +25,6 @@ function ProjectItem(props) {
           </svg>
         </a>
       </section>
-      <div className="corner" />
     </div>
   );
 }
