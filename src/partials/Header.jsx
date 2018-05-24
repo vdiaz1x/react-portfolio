@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Header(props) {
-  return(
+  return (
     <div>
       <h1 className="name">
         <span className="tag">&lt; </span>
@@ -9,7 +9,7 @@ function Header(props) {
         <span className="tag"> /&gt;</span>
       </h1>
     </div>
-  )
+  );
 }
 
 export default Header;

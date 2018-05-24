@@ -240,8 +240,8 @@ svg{
   width: 15%;
   height: 20%;
   /* border-style: solid; */
-  border-top:6px solid red;
-  border-right:6px solid red;
+  border-top:6px solid #ff3c11;
+  border-right:6px solid #ff3c11;
   /* border-width: 0 50px 50px 0; */
   /* border-color: red red transparent transparent; */
   position:absolute;
