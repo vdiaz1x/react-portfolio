@@ -1,14 +1,14 @@
 import React from 'react';
 
-function Header(props) {
+function Header() {
   return (
-    <div>
+    <header>
       <h1 className="name">
         <span className="tag">&lt; </span>
-        Name
+        Vinicio Diaz
         <span className="tag"> /&gt;</span>
       </h1>
-    </div>
+    </header>
   );
 }
 

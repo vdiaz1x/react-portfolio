@@ -1,6 +1,5 @@
 // importing React component to extend new components
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 
 // importing css
 import './style.css';
@@ -15,10 +14,10 @@ import Tech from './components/Tech';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
+// main App component
 class App extends Component {
   constructor(props) {
     super(props);
-
     // state
     this.state = {
       icons: [
@@ -123,9 +122,10 @@ class App extends Component {
           description: 'A battle sequence in the style of old school RPGs (Final Fantasy / turn-based combat) with a touch of modern mobage sensibilities like in Fate/Grand Order.',
           git: 'https://git.generalassemb.ly/vdiaz1x/RPG-Battle-Sequence',
           web: 'https://git.generalassemb.ly/pages/vdiaz1x/RPG-Battle-Sequence/',
-          author: 'self',
+          author: 'Self',
           code: 'RPG Final Boss Run',
           tech: ['HTML', 'CSS', 'Javascript', 'jQuery'],
+          img: 'http://www.armaghplanet.com/blog/wp-content/uploads/2011/02/Imaage-of-Pleiades-580x250.jpg',
         },
         {
           id: 2,
@@ -133,9 +133,10 @@ class App extends Component {
           description: "Database to track user's anime favorites and search anime info. Users can sign up, register, and save favorite anime, and anyone can search for anime information. Users can comment on their favorite anime.",
           git: 'https://git.generalassemb.ly/vdiaz1x/Anime-Database',
           web: 'https://animedatabase.herokuapp.com',
-          author: 'self',
+          author: 'Self',
           code: 'AniME',
           tech: ['node', 'express', 'ejs', 'Postgresql', '3rd-Party API'],
+          img: 'http://www.armaghplanet.com/blog/wp-content/uploads/2011/02/Imaage-of-Pleiades-580x250.jpg',
         },
         {
           id: 3,
@@ -143,19 +144,21 @@ class App extends Component {
           description: 'Crypto information aggregator and coin tracker. Uses graph to chart user\' coin metrics as well as aggregate news tailored to the user\'s list of coins.',
           git: 'https://git.generalassemb.ly/Group1/CryptoApp',
           web: 'https://mysterious-castle-71126.herokuapp.com',
-          author: 'self',
+          author: 'Self, Collaborators',
           code: 'Crypton',
-          tech: ['React', 'React Router', 'node', 'express', '1st-Party API', '3rd-Party API'],
+          tech: ['React', 'React Router', 'node', 'express', 'Postgresql', '1st-Party API', '3rd-Party API'],
+          img: 'http://www.armaghplanet.com/blog/wp-content/uploads/2011/02/Imaage-of-Pleiades-580x250.jpg',
         },
         {
           id: 4,
-          name: 'Imageboard',
-          description: 'An imageboard, similar to 4chan and 2ch (2channel). Post anonymously on a variety of boards, each with their own topic. Can post pictures and text in threads.',
-          git: 'TBD',
-          web: 'TBD',
-          author: 'self',
-          code: '3ch',
-          tech: ['Ruby', 'Ruby on Rails', 'React', 'React Router'],
+          name: 'DJ App',
+          description: 'An app emulating the basic functions of a dj turntabe/controller, such as volume control, playback rate, hi/mid/low filters, delay, and reverb.',
+          git: 'https://git.generalassemb.ly/vdiaz1x/DJ-App/tree/web-audio-api-test',
+          web: 'https://dj-app-local.firebaseapp.com',
+          author: 'Self',
+          code: 'DJ App',
+          tech: ['Web Audio API', 'Firebase', 'React', 'React Router'],
+          img: 'http://www.armaghplanet.com/blog/wp-content/uploads/2011/02/Imaage-of-Pleiades-580x250.jpg',
         },
       ],
     };
@@ -166,6 +169,7 @@ class App extends Component {
 
   // functions
   tech_item_info(name, description) {
+    console.log(this.state.info_click);
     this.setState(prevState => ({
       info_click: !prevState.info_click,
       info_dossier: {
@@ -179,8 +183,11 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <div className="diamond" />
         <Projects
           projects={this.state.projects}
+          image={this.project_image}
+          // show={this.state.img}
         />
         <Tech
           icons={this.state.icons}

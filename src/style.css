@@ -14,12 +14,18 @@
 
 /* main tags */
 body{
-  background:#111;
+  background:#0e0e0e;
   color:#eee;
+}
+
+header{
+  background:black;
+  padding-bottom:40px;
 }
 
 h1, h2, h3, h4, h5, h6, .quotes::before, .quotes::after{
   font-family: 'Oswald', sans-serif;
+  letter-spacing: .5px;
 }
 
 p{
@@ -33,7 +39,7 @@ svg{
 
 /* main components */
 .name{
-  border-bottom: 4px solid #04a8e6;
+  border-bottom: 2px solid #04a8e6;
   width:40%;
   margin: 0 auto;
   font-size:60px;
@@ -41,6 +47,32 @@ svg{
   padding-top:10px;
   font-variant: small-caps;
 }
+
+/* .diamond{
+  background: #fff;
+  border:1px solid white;
+  margin: 50px auto;
+  position: relative;
+  height:1px;
+
+} */
+
+/* .diamond::before, .diamond::after{
+  content:"";
+   width: 0;
+height: 0;
+border-style: solid;
+position:absolute;
+}
+
+.diamond::before{
+  border-width: 0 10px 10px 10px;
+border-color: transparent transparent white transparent;
+}
+
+.diamond::after{
+  left:-20%;
+} */
 
 .tag{
   color:#ff3c11;
@@ -148,6 +180,8 @@ svg{
   margin:70px auto;
   border-radius:5px;
   position: relative;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .tech_header{
@@ -214,7 +248,7 @@ svg{
 .project_item{
   border-bottom: 6px solid #04a8e6;
   border-left: 6px solid #04a8e6;
-  padding:10px 20px 0;
+  padding:15px 20px 0;
   width:45%;
   margin: 10px 0 60px;
   display: flex;
@@ -233,24 +267,23 @@ svg{
   position:absolute;
   bottom:0;
   left:0;
+  z-index:10;
 }
 
 .project_item::after{
   content:"";
   width: 15%;
   height: 20%;
-  /* border-style: solid; */
   border-top:6px solid #ff3c11;
   border-right:6px solid #ff3c11;
-  /* border-width: 0 50px 50px 0; */
-  /* border-color: red red transparent transparent; */
   position:absolute;
   top:0;
   right:0;
+  z-index:10;
 }
 
 .project_text p{
-  padding:15px 0;
+  padding:5px 0;
 }
 
 .project_author{
@@ -277,6 +310,7 @@ svg{
   justify-content:space-evenly;
   /* align-content:center; */
   position: relative;
+  z-index:5;
 }
 
 .project_data::before{
@@ -287,15 +321,39 @@ svg{
   position: absolute;
 }
 
+.project_image{
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  opacity: 0;
+}
+
+.img_show{
+  z-index:10;
+  opacity: 1;
+}
+
+.img_left{
+  left:-48vw;
+}
+
+.img_right{
+  left:48vw;
+}
+
 .project_icon{
   text-align: center;
   padding:0 0 10px;
   margin-top: 5px;
-  border-bottom:2px solid transparent
+  border-bottom:2px solid transparent;
+  cursor:pointer;
 }
 
 .project_link{
-  width:10%;
+  /* width:10%; */
   position: relative;
 }
 
@@ -343,3 +401,7 @@ svg{
   color:#ff3c11;
   border-bottom: 3px solid #04a8e6;
 }
+
+/* icon */
+
+.icon{margin:0 10px;}

@@ -4,7 +4,7 @@ import TechItem from '../items/TechItem';
 function Tech(props) {
   // mapping to build the list of tech icons with props
   const icon_list = props.icons.map((icon, index) => (<TechItem
-    key={'icon' + index}
+    key={`icon${index}`}
     {...icon}
     info={props.info}
     toggle={props.toggle}
