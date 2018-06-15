@@ -120,45 +120,45 @@ class App extends Component {
           id: 1,
           name: 'RPG Battle Simulation',
           description: 'A battle sequence in the style of old school RPGs (Final Fantasy / turn-based combat) with a touch of modern mobage sensibilities like in Fate/Grand Order.',
-          git: 'https://git.generalassemb.ly/vdiaz1x/RPG-Battle-Sequence',
-          web: 'https://git.generalassemb.ly/pages/vdiaz1x/RPG-Battle-Sequence/',
+          git: 'https://github.com/vdiaz1x/RPG-Battle-Sequence',
+          web: 'https://github.com/pages/vdiaz1x/RPG-Battle-Sequence/',
           author: 'Self',
           code: 'RPG Final Boss Run',
           tech: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-          img: 'http://www.armaghplanet.com/blog/wp-content/uploads/2011/02/Imaage-of-Pleiades-580x250.jpg',
+          img: 'https://lh3.googleusercontent.com/uYP5z9mqKPlWtonRI-o18rBjcJZfHp9ys6syYPON9QNV7kKcWkVNR_2cUv-ihYBriQDwK74hSFtiwqKDeYHZwtJzrVeoiZIQh3N1KfjnLKelx7NupuSsSds_ceI6hBwhzHBth3aYkIkKRVFnMlvxWRDD0tQGlpkU7IvcrOvvf3xdGjF6fetZh68z0jRx58ASi5Fe7Di6QyAUul5Y7MMkdR9YbghIUira11S-M0DmbMIz_uUS7pdTRAz6l4yLuSU22-hl9CJ2AiHdEyOE6nYRvZw3eotrVk8x3t4mdrJ_XtJ29yDFW_FDIv0Up3d6Eekp7zpiov69t7gdZ8a-9RhJXZLDj2DuoFysVR7rOiGMKpJa2lwm5rWjoo30gv_CiGHT04SoIoWk1rnqAOrwSRP2KYkR7HK_lBVRGnTG8NvNV3_2TxVNvz_48h3rkUvyx36k80qZpermQOJD3o7JFKmo7u2NoubckEBzddpK9ZgZbf-nLo20LnrmcmGCC1Q_uZes-1TNowqlXUE5be8Dfc0kWelGlST4z_0zBcDk9yoKyJOV8DbAi8sjNBlC0tFpSrdBKk0k3CcNNhhE1cOc-E_zS4TyhjU8EXstCDtvUmlzW9AeSZb4txHFsj5dZOcxou-S1543JCxYbwHwfYvcmrIrUn3PlPyVAFU=w854-h480-no',
         },
         {
           id: 2,
           name: 'Anime Database',
           description: "Database to track user's anime favorites and search anime info. Users can sign up, register, and save favorite anime, and anyone can search for anime information. Users can comment on their favorite anime.",
-          git: 'https://git.generalassemb.ly/vdiaz1x/Anime-Database',
+          git: 'https://github.com/vdiaz1x/Anime-Database',
           web: 'https://animedatabase.herokuapp.com',
           author: 'Self',
           code: 'AniME',
           tech: ['node', 'express', 'ejs', 'Postgresql', '3rd-Party API'],
-          img: 'http://www.armaghplanet.com/blog/wp-content/uploads/2011/02/Imaage-of-Pleiades-580x250.jpg',
+          img: 'https://lh3.googleusercontent.com/8iBK_SaoSq-6zWDlKzBfpNFIqn8C8IQgpPAS8EIAAn9Hb2Ko9_7C82dVozKqPwzBsM6Ww4Yp5ONWvLZ3tfPzBBndZLvotqPTM9jKQMG4dEy7gmn8sLIWApUU7DM-WC0l0kkhIslmeCBqin8iKPaoDVIqiv-MCBbA_OVP7ZZGNIAi5e6yij7U94bGVqERFriEJsdqgEfKElM7NxH8j8iD2ateT5EEzjptts9vsvIzbbjlBu82DvKA0nwqp00dl0jgFfYOEvSrQ0nffzyQoirvu5clHEvEOtzXqlRXWKwh8Bm6NFbaScumO8Y-1zTu3wMx_jytjfP6IrJ07-EIcr7yxVUfiKv4WzfNF5LIa49YSBIv_q6UEdrNlJo-w9nJWcK8FSuMVlc0Orpv4actsf3xOPGy0GfRp4BXx7QS44MKHcNYig9n0DhZltFYaVkI_8Smtnae5TFDfBAPOXSITt9z8m3AZTQy3HXxEGVkxjY862RYeXAWQXssHsOaaoQyJI2-L2d_x4pVnT04uKPMznz2JjK_VQxXPF9th-Zr8GzDsXJo3_3Ar9z4IrkQqsAjFGh5DgQmLi6wFUBCAdu-JWODdt4zDqnitcjA1PhBljBU7dtQr9164V_ZklCps6Wob1OnGAWtnlq8VyZNNT1ytuKAEowR7YtzkvM=w1068-h600-no',
         },
         {
           id: 3,
           name: 'Crypto App',
           description: 'Crypto information aggregator and coin tracker. Uses graph to chart user\' coin metrics as well as aggregate news tailored to the user\'s list of coins.',
-          git: 'https://git.generalassemb.ly/Group1/CryptoApp',
+          git: 'https://github.com/Group1/CryptoApp',
           web: 'https://mysterious-castle-71126.herokuapp.com',
           author: 'Self, Collaborators',
           code: 'Crypton',
           tech: ['React', 'React Router', 'node', 'express', 'Postgresql', '1st-Party API', '3rd-Party API'],
-          img: 'http://www.armaghplanet.com/blog/wp-content/uploads/2011/02/Imaage-of-Pleiades-580x250.jpg',
+          img: 'https://lh3.googleusercontent.com/2Bv1JNW4QqGNdz4zV70G93HMFWrZgQNnaWAF1rCRRNMe12X6yqZJorvjs0xue9bBbLN30mRH7aQr4jpYcN-p6w47aDXmEU8867R1g85xpq620Qz99M0paOxVOVZ1vzcVmbLQK4aV_tWP_gliqvD5s_t30cKJZ9_Xcddfuopp2tFddjARYm81TksIib5c7htEBYJCPeU_pxNOApmkU-P2WLDkpv4tguvcsPlzn13s5xHrli287aC2xfiz5rLms7p2U5aPQFjx78eXMJhTpCvIvupayIU-MEZ9ZCGRjg8yFSWYIALrWAOEDK9x0aEG0yz8q53EmOioffjdLk-QA4FVkCbcKxT7XmqeSR2aCthimFOfNYIVUbXXEtszdwIWP875R21Z-ty-ed8M8FGoU65DDbPbu9fWmPYKA0pcohhXyIu-BMx-g55xMvxyWYU4_v1ZRklROYouxVOIXwr7TnjlK3V8f7QFHWFFCLEFY7uRXC8L3ancttpONEFUbfvVaZZzg6O8omr6ucrvsYV8QfuClrPbbcGrlp9V2i8Shabnb_Mbw9d6pjVaX_jzz1DSpe4sQhDpc1fnSGA0RK2hUyS2sejNEFbEo10dWewKktlIY8wR5dJHrrkk0Kqif1Logc3VwSkx4Ksid2Z6Ncar4J8BO0zWWSbsby0=w1068-h600-no',
         },
         {
           id: 4,
           name: 'DJ App',
           description: 'An app emulating the basic functions of a dj turntabe/controller, such as volume control, playback rate, hi/mid/low filters, delay, and reverb.',
-          git: 'https://git.generalassemb.ly/vdiaz1x/DJ-App/tree/web-audio-api-test',
+          git: 'https://github.com/vdiaz1x/DJ-App/tree/web-audio-api-test',
           web: 'https://dj-app-local.firebaseapp.com',
           author: 'Self',
           code: 'DJ App',
           tech: ['Web Audio API', 'Firebase', 'React', 'React Router'],
-          img: 'http://www.armaghplanet.com/blog/wp-content/uploads/2011/02/Imaage-of-Pleiades-580x250.jpg',
+          img: 'https://lh3.googleusercontent.com/YEMuJmMhthTbkCfErE-oqRd7iiEHrqXpINHpP1z4jHWM-VkZkfPSlGheZcBNdFp4AgSYOCDd1afFCcl6pjhy-RfX_ffXeJmcfkCp3sqW_i10FFsdGLyXfIhBk-Pr_2YsBa8BKQxEgSP-SsM8CGjnHoikhhiRr5Sgmz_IEONTEacpF8iuUROIzJXNFRP9_oyXf_EcjRJrCC41kPnsMG-GYfFyxLDhqEBZ8eacjVzYTS8AVeeLhwnsY5RjRNAR8UaP9dbLASJvio4DvCmGxQcuoOXJjAGS0QARnE1otsxXlS3bCGSZTM_QUaeuRKwd-_ei5Axf9BZCTM8h1Ytn6yILQE-lGpCIBf81eF1RvUPtjBjs4MOMmnxTE5N_0eHTj1enZCWpkV8ulEsIdd7VyMkqRjUIY2MwGyQt0In1a1b4h5zePYSEeLtnh709XVJ-xisMksifHusQ8x5JFe81i2qe6P0-VIyB83neIg9miigdEGvBruMEVjfl60nv4zuIa5xSeQ2hpRMRYOvHqjtIZ0AFpidmZe06L2iU47KfsjwmmwRmlNZPAiiHDe1XGjDq3acyvKjpfbzIgektu0TGwsOKHg2knbcoyifOwJABdv2jjxVVzy59XIfJ6sZNCFTDxTLwAWLQbyD9a8bsUmR37QP3PWUHAOND7d8=w854-h480-no',
         },
       ],
     };
@@ -169,7 +169,6 @@ class App extends Component {
 
   // functions
   tech_item_info(name, description) {
-    console.log(this.state.info_click);
     this.setState(prevState => ({
       info_click: !prevState.info_click,
       info_dossier: {
@@ -183,19 +182,22 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <div className="diamond" />
+        <div className="diamond">&lt;&gt;</div>
         <Projects
           projects={this.state.projects}
           image={this.project_image}
           // show={this.state.img}
         />
+        <div className="diamond">&lt;&gt;</div>
         <Tech
           icons={this.state.icons}
           info={this.tech_item_info}
           toggle={this.state.info_click}
           dossier={this.state.info_dossier}
         />
+        <div className="diamond">&lt;&gt;</div>
         <AboutMe />
+        <div className="diamond">&lt;&gt;</div>
         <Contact />
         <Footer />
       </div>

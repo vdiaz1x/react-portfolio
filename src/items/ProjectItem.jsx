@@ -23,7 +23,7 @@ class ProjectItem extends Component {
   render() {
     const stack = this.props.tech.map(tech => <span className="project_tech_stack" key={`${tech}_stack`} >{tech}</span>);
 
-    const show = this.state.show && 'img_show';
+    const show = this.state.show ? 'slide-in-fwd-center' : '';
 
     const side=this.props.id%2===0 ? "img_left" : "img_right";
 
