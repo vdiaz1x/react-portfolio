@@ -9,9 +9,10 @@ import Header from './partials/Header';
 import Footer from './partials/Footer';
 
 // importing components
-import AboutMe from './components/AboutMe';
-import Tech from './components/Tech';
+import Intro from './components/Intro';
 import Projects from './components/Projects';
+import Tech from './components/Tech';
+import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 
 // main App component
@@ -182,6 +183,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <Intro />
         <div className="diamond">&lt;&gt;</div>
         <Projects
           projects={this.state.projects}
