@@ -23,9 +23,16 @@ header{
   padding-bottom:40px;
 }
 
-h1, h2, h3, h4, h5, h6, .quotes::before, .quotes::after, .diamond{
+h1, h2, h3, h4, h5, h6, .quotes::before, .quotes::after, .diamond, .nav_link{
   font-family: 'Oswald', sans-serif;
   letter-spacing: .5px;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
 }
 
 p{
@@ -107,11 +114,6 @@ svg{
   color:#ff3c11;
 }
 
-.tech, .projects{
-  /* height:20vh; */
-  /* border:2px solid white; */
-}
-
 .footer{
   padding:20px;
   background:black;
@@ -164,6 +166,16 @@ svg{
 
 .tooltip:hover .tooltiptext {
     opacity: 1;
+}
+
+/* nav components */
+.nav_link{
+  width:25%;
+  text-align: center;
+  padding:20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor:pointer;
 }
 
 /* tech components */

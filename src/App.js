@@ -7,6 +7,7 @@ import './style.css';
 // importing partials
 import Header from './partials/Header';
 import Footer from './partials/Footer';
+import Nav from './partials/Nav'
 
 // importing components
 import Intro from './components/Intro';
@@ -121,8 +122,8 @@ class App extends Component {
           id: 1,
           name: 'RPG Battle Simulation',
           description: 'A battle sequence in the style of old school RPGs (Final Fantasy / turn-based combat) with a touch of modern mobage sensibilities like in Fate/Grand Order.',
-          git: 'https://github.com/vdiaz1x/RPG-Battle-Sequence',
-          web: 'https://github.com/pages/vdiaz1x/RPG-Battle-Sequence/',
+          git: 'https://github.com/vdiaz1x/RPG-Battle-Simulator',
+          web: 'https://vdiaz1x.github.io/RPG-Battle-Simulator/',
           author: 'Self',
           code: 'RPG Final Boss Run',
           tech: ['HTML', 'CSS', 'Javascript', 'jQuery'],
@@ -143,7 +144,7 @@ class App extends Component {
           id: 3,
           name: 'Crypto App',
           description: 'Crypto information aggregator and coin tracker. Uses graph to chart user\' coin metrics as well as aggregate news tailored to the user\'s list of coins.',
-          git: 'https://github.com/Group1/CryptoApp',
+          git: 'https://github.com/vdiaz1x/CryptoApp',
           web: 'https://mysterious-castle-71126.herokuapp.com',
           author: 'Self, Collaborators',
           code: 'Crypton',
@@ -183,6 +184,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <Nav/>
         <Intro />
         <div className="diamond">&lt;&gt;</div>
         <Projects
