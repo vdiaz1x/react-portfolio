@@ -3,7 +3,7 @@ import React from 'react';
 function TechItem(props) {
   // showing tech square with props
   return (
-    <div className="tech_item tooltip angle_bracket" onClick={() => props.info(props.name, props.description)}>
+    <div className="tech_item tooltip angle_bracket" >
       <div className="tech_img">
         {props.svg}
       </div>
@@ -17,3 +17,5 @@ function TechItem(props) {
 }
 
 export default TechItem;
+
+// onClick = {() => props.info(props.name, props.description)}

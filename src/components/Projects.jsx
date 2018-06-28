@@ -5,7 +5,7 @@ function Projects(props) {
   // map
   const project_list = props.projects.map((project, index) => <ProjectItem key={`project${index + 1}`} {...project} image={props.image} />);
   return (
-    <div className="projects">
+    <div className="projects" id="proj">
       <h1 className="name">
         <span className="tag">&lt; </span>
         Project Archive

@@ -3,7 +3,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 function Contact() {
   return (
-    <div className="tech">
+    <div className="contact">
       <h1 className="name">
         <span className="tag">&lt; </span>
         Contact
